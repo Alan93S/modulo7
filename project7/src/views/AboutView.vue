@@ -1,5 +1,13 @@
 <template>
-  <div class="about">
-    <h1>Hola</h1>
-  </div>
+<h1>This is a login page</h1>
 </template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
