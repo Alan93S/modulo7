@@ -2,11 +2,12 @@
   
     <div>
 
-        <div class="card" v-for="{nombre, codigo, img} in cursos" style="width: 18rem;">
-  <img src= {{img}}  class="card-img-top" alt="imagen">
+        <div class="card" v-for="{nombre, codigo, img} in cursos" :key="nombre" style="width: 18rem;">
+  <img v-bind:src="(img)"  class="card-img-top" alt="imagen">
   <div class="card-body">
     <h5 class="card-title">{{nombre}}</h5>
     <p class="card-text">{{codigo}}</p>
+
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
@@ -75,8 +76,11 @@ export default {
 
 
                             })
+                            
+
 
 }
+
 </script>
 
 <style>
