@@ -19,6 +19,7 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href=""
           ><router-link to="/">Inicio </router-link>
+          
           <!--span
                         class="sr-only">(current)</span--></a
         >
