@@ -2,11 +2,13 @@
   
     <div>
 
-        <div class="card" v-for="{nombre, codigo, img} in cursos" style="width: 18rem;">
+        <div class="card" v-for="{nombre, codigo, img, descripcion, duracion} in cursos" style="width: 18rem row;">
   <img src= {{img}}  class="card-img-top" alt="imagen">
   <div class="card-body">
     <h5 class="card-title">{{nombre}}</h5>
     <p class="card-text">{{codigo}}</p>
+    <p class="card-text">{{descripcion}}</p>
+    <p class="card-text">{{duracion}}</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
