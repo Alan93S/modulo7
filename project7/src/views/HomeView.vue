@@ -1,16 +1,23 @@
 <template>
-  <h1>Home</h1>
+  
+  <div>
+  <Cursos/>
+</div>
 </template>
 
 <script>
+import Cursos from '/src/components/Cursos'
 export default {
 
+components: {
+
+    Cursos,
+
+    }
 }
 </script>
 
 <style>
-h1{
-  text-align: center;
-}
+
 
 </style>
