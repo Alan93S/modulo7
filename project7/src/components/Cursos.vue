@@ -2,13 +2,13 @@
   
     <div>
 
-        <div class="card" v-for="{nombre, codigo, img} in cursos" :key="nombre" style="width: 18rem;">
+        <div class="card" v-for="{nombre, codigo, img, url} in cursos" :key="nombre" style="width: 18rem;">
   <img v-bind:src="(img)"  class="card-img-top" alt="imagen">
   <div class="card-body">
     <h5 class="card-title">{{nombre}}</h5>
     <p class="card-text">{{codigo}}</p>
 
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a :href="(url)" class="btn btn-primary">Conoce más</a>
   </div>
 </div>
 
@@ -35,7 +35,8 @@ export default {
                         "descripcion": "curso html",
                         "cupos": 10,
                         "inscritos": 0,
-                        "img": "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+                        "img": "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png",
+                        "url": "https://www.udemy.com/course/universidad-html-aprende-html-desde-cero-hasta-experto-css-html5/"
                         },
                         {
                         "codigo": "0002",
@@ -46,7 +47,9 @@ export default {
                         "descripcion": "curso css",
                         "cupos": 20,
                         "inscritos": 0,
-                        "img": "https://lineadecodigo.com/wp-content/uploads/2014/04/css.png"
+                        "img": "https://lineadecodigo.com/wp-content/uploads/2014/04/css.png",
+                        "url": "https://www.udemy.com/es/topic/css/"
+
                         },
                         {
                         "codigo": "0003",
@@ -57,7 +60,8 @@ export default {
                         "descripcion": "curso sass",
                         "cupos": 30,
                         "inscritos": 0,
-                        "img": "https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png"
+                        "img": "https://miro.medium.com/max/512/1*9U1toerFxB8aiFRreLxEUQ.png",
+                        "url": "https://www.udemy.com/course/sass-curso/"
                         },
                         {
                         "codigo": "0004",
@@ -68,7 +72,8 @@ export default {
                         "descripcion": "curso vue",
                         "cupos": 15,
                         "inscritos": 0,
-                        "img": "https://thumbs.gfycat.com/PinkPiercingBull-size_restricted.gif"
+                        "img": "https://thumbs.gfycat.com/PinkPiercingBull-size_restricted.gif",
+                        "url": "https://www.udemy.com/course/vuejs-fh/"
                         }
 
 
