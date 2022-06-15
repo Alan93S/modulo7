@@ -1,8 +1,8 @@
 <template>
   
-    <div>
+    <div class="row justify-content-center">
 
-        <div class="card" v-for="{nombre, codigo, img, url} in cursos" :key="nombre" style="width: 18rem;">
+        <div class="card col-6 col-sm-3 m-3 p-0" v-for="{nombre, codigo, img, url} in cursos" :key="nombre" style="width: 18rem;">
   <img v-bind:src="(img)"  class="card-img-top" alt="imagen">
   <div class="card-body">
     <h5 class="card-title">{{nombre}}</h5>
@@ -14,6 +14,42 @@
 
 
     </div>
+
+    <footer>
+        <footer class="bg-light text-center text-dark">
+  <div class="container p-4 pb-0">
+    <section class="">
+      <form action="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+
+          <div class="col-md-5 col-12">
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example29" class="form-control" />
+              <label class="form-label" for="form5Example29">Email address</label>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <p class="text-white" href="https://mdbootstrap.com/">Modulo 7 - Alan - Elizabeth - Rodrigo - Guillermo - Daniel</p>
+  </div>
+</footer>
+    </footer>
 
 </template>
 

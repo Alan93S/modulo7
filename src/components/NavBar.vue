@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <span class="navbar-brand m-3">Modulo 7 - Alan - Elizabeth - Rodrigo - Guillermo - Daniel</span>
+    <span class="navbar-brand m-3">Modulo 7</span>
     <button
       class="navbar-toggler"
       type="button"
